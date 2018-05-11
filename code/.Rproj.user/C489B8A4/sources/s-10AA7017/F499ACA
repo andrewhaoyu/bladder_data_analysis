@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1525883879613.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F499ACA",
+    "lastKnownWriteTime" : 1526055927,
+    "last_content_update" : 1526055928001,
+    "path" : "~/GoogleDrive/Bladder/code/preliminary.R",
+    "project_path" : "preliminary.R",
+    "properties" : {
+        "cursorPosition" : "23,15",
+        "scrollLine" : "19",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
