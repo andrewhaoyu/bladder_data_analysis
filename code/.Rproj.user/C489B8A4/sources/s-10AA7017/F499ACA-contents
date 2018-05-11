@@ -55,7 +55,16 @@ cumamge2[cumAM_ge==2] = 1
 x <- cbind(cumamge1,cumamge2,data$AGE,data$SITE,
            data$HIGHRISK,data$POSSIBLE)
 colnames(x)[3:6] <- c("age","site","highrisk","possible") 
-GenerateZstandard(y)
+z.standard <- GenerateZstandard(y)
 model <- TwoStageModel(y = y,additive = x,
                        missingTumorIndicator = 888)
+z.self.design <- cbind(1-z.standard[,1],z.standard[,1])
+x.new <- cbind(cumamge1,data$AGE,data$SITE,
+               data$HIGHRISK,data$POSSIBLE)
+model2 <- EMmvpolySelfDesign(y,
+                               x.self.design=cumamge2,
+                   z.self.design ,
+                               additive=x.new,
+                               missingTumorIndicator = 888
+                               )
 #cumamge_du <- model.matrix(~cumAM_ge)
