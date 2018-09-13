@@ -1,1 +1,6 @@
+.gitignore
+code/.Rproj.user/*
+.DS_Store
+manuscript/
 data/
+.Rproj.user
